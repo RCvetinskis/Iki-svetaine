@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0%;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@300&display=swap');
+body { background-image: url(https://madeinvilnius.lt/wp-content/uploads/2017/05/bananas-698608_1280.jpg );
+    background-size:cover;
+   background-repeat: no-repeat;
+
+   
+}
+
+.logo {width: 60px;
+    float: left;
+    margin-left: 150px;
+}
+
+header {background-color: white;
+    display: flex;
+    justify-content: space-between;
+    
+    
+ }
+
+nav{
+    width: 600px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+  
+  
+
+}
+ a {
+   color: black;
+   font-size: 1.2em;
+   text-decoration: none;
+   border-bottom: 1px solid black;
+  
+ 
+  
+}
+a::before {
+   content: "";
+    position: absolute;
+    width: 57px;
+    height: 3%;
+    left: 1;
+    background: linear-gradient(blue , yellow);
+    transition: 0.3s;
+    opacity: 0;
+  
+}
+a:hover::before {
+    transform: translateX(65%);
+    opacity: 0.7;
+}
+a::after {
+   content: "";
+    position: absolute;
+    width: 57px;
+    height: 3%;
+    left: 1;
+    background: linear-gradient(yellow , green,red );
+    transition: 0.3s;
+    opacity: 0;
+    contain: content;
+  
+}
+a:hover::after {
+    transform: translateX(-147%);
+    opacity: 0.7;
+    transition-delay: 0.5s;
+}
+
+a:hover {
+   border-bottom: none;
+  
+}
+
+
+main {
+    background-color: white;
+    margin-top: 30px; 
+    padding: 40px;
+   border-radius: 5px;
+  margin: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
+
+}
+@media (max-width: 1000px){
+    main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+main h1 {
+    margin: 20px;
+}
+section {
+    text-align: center;
+    font-family: 'Anybody', cursive;
+}
+.parduotuve {max-width: 40%;
+    float: left;
+   margin-right: 20px;
+    
+}
+footer {
+    background-color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+   
+}
