@@ -23,16 +23,17 @@
       <h1>Susiekite su musu <span> komanda!</span></h1>
       <form action="index.html">
         <label for="name">Vardas:</label>
-        <input type="text" name="name" id="name" placeholder="Petras" />
+        <input type="text" name="name" id="name" placeholder="Petras"required minlength="3" />
         <label for="email">El.pastas:</label>
         <input
           type="email"
           name="email"
           id="email"
           placeholder="email@email.lt"
+          required
         />
         <label for="number">Iki korteles numeris:</label>
-        <input type="number" id="number" name="number" placeholder="12345678" />
+        <input type="number" id="number" name="number" placeholder="12345678" required  />
         <label for="text">Zinute:</label>
         <textarea
           name="text"
@@ -40,6 +41,7 @@
           cols="30"
           rows="5"
           placeholder="Jusu laiskas mums..."
+         
         ></textarea>
         <input class="submit" type="submit" value="Submit" />
       </form>
