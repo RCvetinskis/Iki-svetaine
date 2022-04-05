@@ -23,8 +23,7 @@ span {color:rgba(0, 128, 0, 0.747) ;}
 header {background-color: white;
     display: flex;
     justify-content: space-between;
-  position: fixed;
-    top: 0;
+ 
     
  }
 
